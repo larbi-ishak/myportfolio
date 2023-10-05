@@ -19,7 +19,7 @@ export default function RootLayout({
       <body  className="mx-20 my-10">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Navbar/>
-            <div className='p-6'>
+            <div className='px-6 py-4'>
             {children}
             </div>
             <Footer/>
