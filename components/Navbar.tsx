@@ -1,15 +1,49 @@
-'use client'
+import Link from "next/link";
 
-export default function Navbar (){
-    return (
-        <nav className="flex  justify-between">
-            <h1 className="text-xl underline decoration-4">LARBI ISHAK</h1>
-            <div className="rounded-full px-2 py-2 border-2 border-solid border-gray-400 hover:shadow-md hover:shadow-gray-400 ease-in-out duration-300">
-                <a className="m-4" href="/blog">Blog</a>
-                <a className="m-4"href="/projects">Projects</a>
-                <a className="m-4"href="/contact">Contact</a>
-                <a className="m-4"href="/resume">Resume</a>
-            </div>
-        </nav>
-    )
+export default function Navbar() {
+  return (
+    <div>
+      <div className="flex justify-between pb-8 items-end">
+        <p className="pb-2 border-b-4 border-zinc-700">
+          <Link className="font-bold tracking-tight text-2xl" href="/">
+            LARBI ISHAK
+          </Link>
+        </p>
+        <ul className="text-sm flex flex-wrap gap-x-2 border border-zinc-200 px-4 rounded-full shadow-sm hover:shadow-md transition">
+          <li>
+            <Link
+              className="block text-zinc-500 hover:text-zinc-700 transition-colors font-medium py-2 px-2"
+              href="/blog"
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="block text-zinc-500 hover:text-zinc-700 transition-colors font-medium py-2 px-2"
+              href="/blog"
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="block text-zinc-500 hover:text-zinc-700 transition-colors font-medium py-2 px-2"
+              href="/projects"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="block text-zinc-500 hover:text-zinc-700 transition-colors font-medium py-2 px-2"
+              href="/resume"
+            >
+              Resume
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
