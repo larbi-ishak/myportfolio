@@ -21,7 +21,7 @@ export default function Navbar() {
           <li>
             <Link
               className="block text-zinc-500 hover:text-zinc-700 transition-colors font-medium py-2 px-2"
-              href="/blog"
+              href="/contact"
             >
               Contact
             </Link>
