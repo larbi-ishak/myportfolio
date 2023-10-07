@@ -19,7 +19,7 @@ export default function Home() {
           </Link>{" "}
           proficient in the Back End stack. Interested in building software,
           design systems, user experience, and tooling. Working on Freelance and{" "}
-          <Link className="underline" href={"/"}>
+          <Link className="underline" href={"https://github.com/larbi-ishak"}>
             open source projects
           </Link>{" "}
           at free time.
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap gap-x-3">
           <Container>
-            <div className="py-4 px-4 flex lg:flex-col justify-between ">
+            <div className="py-4 px-4 flex lg:flex-col">
                 <Facebook color="#4267B2"/>
                 <p className="ml-4 text-zinc-400">Larbi Ishak</p>
               <Link href={"https://www.facebook.com/ishak.larbi.94"}><Button style={{backgroundColor: "#4267B2"}} className="rounded-full self-center">Follow</Button></Link>

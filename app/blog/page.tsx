@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
-import { allPosts, Post } from "contentlayer/generated";
+import { allPosts } from "contentlayer/generated";
 
 export default function Blog() {
   const posts = allPosts.sort((a: any, b: any) =>
@@ -11,6 +11,7 @@ export default function Blog() {
       <h1 className="mb-3 underline text-2xl">
         Blogs
       </h1>
+      <>
       {posts.map((post: any, idx: number) => (
         <div className="flex justify-between pr-20" key={idx}>
           <Link href={`/blog/${post.path}`} className="hover:underline">{post.title} →</Link>
@@ -22,7 +23,10 @@ export default function Blog() {
           </time>
         </div>
       ))}
-
+</>
+      <h1 className="mb-3 underline text-2xl">
+        Talks
+      </h1>
     </div>
   );
 }
